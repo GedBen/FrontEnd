@@ -1,0 +1,45 @@
+<!-- Barre responsive -->
+<div class="responsive-bar" *ngIf="isMobile" (click)="toggleMenu()">
+    <mat-icon>{{ menuOpen ? 'close' : 'menu' }}</mat-icon>
+</div>
+
+<div [ngClass]="{ 'left_section_open': isLeftSectionVisible }">
+    <section class="left_section">
+        
+            <div class="nom_projet"> DCE </div>
+
+            <nav>
+                <ul style="padding-top: 1.5rem">
+                   
+                    
+                    <li><a href='#'>Construction</a></li>
+                    <li><a href='#'>Équité genre</a></li>
+                    <li><a href='#'>Prévention risques</a></li>
+                    <li><a href='#'>Santé</a></li>
+                    <li><a href='#'>Autre Catégorie</a></li>
+                    <li><a href='#'>Autre Catégorie</a></li>
+                    
+                    <hr style="color: white">
+                    
+                    <li>
+                        <img src="assets/profil.png" alt="hommage" style="width: 70%; height: 25%; display: block; margin: 0 auto; margin-top: 4rem">
+                        <br />
+                        <span style="color: white; text-align: center;  display: block; margin: 0 auto; font-size: small;">IN MEMORIAM
+                        </span>
+                        <span style="color: white; text-align: center;  display: block; margin: 0 auto; font-size: small;">Nom et Prenom</span>
+                        <span style="color: white; text-align: center;  display: block; margin: 0 auto; font-size: small;">Naissance - Mort</span>
+                        <span style="color: white; text-align: center;  display: block; margin: 0 auto; font-size: small;">Niveau et Poste</span>
+        
+                    </li>
+                    
+                </ul>
+            </nav>
+        <!-- </div> -->
+        
+        
+    </section>
+</div>
+<!-- <div [style.display]="isLeftSectionVisible ? 'block' : 'none'"> -->
+
+<!-- </div> -->
+
